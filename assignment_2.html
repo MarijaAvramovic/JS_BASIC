@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //switch
+        var rez
+        var a = prompt("Unesite prvi broj: ")
+
+        var operacija = prompt("Izaberite znak racunske operacije (+, -, *, /): ")
+
+        var b = prompt("Unesite drugi broj: ")
+
+        switch (operacija){
+            case "+":
+                rez = parseInt(a) + parseInt(b)
+                break
+            case "-":
+                rez = parseInt(a) - parseInt(b)
+                break
+            case "*":
+                rez = parseInt(a) * parseInt(b)
+                break
+            case "/":
+                rez = parseInt(a) / parseInt(b)
+                break
+            default:
+            alert("Nispravna opcija.")
+        }
+        if(rez !== undefined){
+        alert("Rezultat je: " + rez)
+        }
+    </script>
+</body>
+</html>
